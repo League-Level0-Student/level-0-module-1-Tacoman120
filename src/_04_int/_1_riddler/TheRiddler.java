@@ -1,4 +1,4 @@
-package _04_int._1_riddler;
+                     package _04_int._1_riddler;
 
 import javax.swing.JOptionPane;
 
@@ -42,7 +42,15 @@ if(riddle2.equals("a stamp")) {
 		fail++;
 		JOptionPane.showMessageDialog(null, "Your score is... "+score+" right and "+fail+" wrong!");
 		}
-String riddle3 = JOptionPane.showInputDialog(null, "riddle me this: ");
+String riddle3 = JOptionPane.showInputDialog(null, "riddle me this: What has many keys but can't open a single lock? ");
+if (riddle3.equals("a piano")) {
+	JOptionPane.showMessageDialog(null, "Correct!");
+	score++;
+	
+}else { 
+	JOptionPane.showMessageDialog(null, "Wrong! The correct answer is... a piano!");
+	fail++;
+}
 
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
 
@@ -53,6 +61,8 @@ String riddle3 = JOptionPane.showInputDialog(null, "riddle me this: ");
 		// 2. Make a pop up to show the score.
 		
 JOptionPane.showMessageDialog(null, "Your final score is... "+score+" right and "+fail+" wrong!");
+JOptionPane.showMessageDialog(null, "Goodbye");
 	}
+	
 }
 
